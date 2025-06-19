@@ -1,0 +1,741 @@
+/* =========================
+   ROOT BRAND VARIABLES
+========================= */
+:root {
+  --nimbus-orange: #f15001;
+  --nimbus-red: #b12724;
+  --nimbus-gradient: linear-gradient(160deg, #f15001 0%, #a31610 100%);
+  --nimbus-pink: #e93c66;
+  --nimbus-bg-light: #f7fafc;
+  --nimbus-dark: #272727;
+  --nimbus-grey: #d0d0d0;
+  --nimbus-white: #fff;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Segoe UI', Arial, sans-serif;
+  --radius-lg: 1.5rem;
+  --radius-sm: 0.75rem;
+  --shadow-sm: 0 2px 8px rgba(30, 41, 59, 0.07);
+  --shadow-md: 0 8px 32px rgba(30, 41, 59, 0.12);
+}
+/* Login page */
+.gradient-custom-2 {
+  background: var(--nimbus-gradient);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+.employee-toggle-bottom {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--nimbus-dark);
+}
+
+/* ========= BASE ========= */
+html, body {
+  overflow-x: hidden;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--nimbus-bg-light);
+  color: var(--nimbus-dark);
+}
+
+/* ========= TYPOGRAPHY ========= */
+.heading-xl {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--nimbus-red);
+  text-shadow: 1.5px 1.5px 0 #fff, 2.5px 2.5px 4px #cd6a1f80;
+  line-height: 1.1;
+}
+
+.heading-lg {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--nimbus-red);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color:var(--nimbus-dark);
+}
+
+/* ========= UTILITIES ========= */
+.text-orange { color: var(--nimbus-orange) !important; }
+.text-pink { color: var(--nimbus-pink) !important; }
+.text-red { color: var(--nimbus-red) !important; }
+.bg-orange { background-color: var(--nimbus-orange); }
+.bg-pink { background-color: var(--nimbus-pink); }
+.font-heading { font-family: var(--font-heading); }
+.font-body { font-family: var(--font-body); }
+
+.rope-divider, .hero-rope-divider {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background: url('DashboardRope1.png') repeat-x;
+  background-size: contain;
+}
+/* ========= BUTTON ========= */
+.nimbus-btn {
+  background: linear-gradient(90deg, var(--nimbus-orange), var(--nimbus-pink));
+  border: none;
+  color: var(--nimbus-bg-light) !important;
+  font-weight: 600;
+  letter-spacing: .03em;
+  border-radius: 14px;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 3px 14px rgba(234, 80, 80, .08);
+  transition: background 0.2s;
+}
+
+.nimbus-btn:hover {
+  background: linear-gradient(90deg, var(--nimbus-orange));
+}
+
+/* ========= HERO SECTION ========= */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 470px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url('DashboardBackground.png') center center/cover no-repeat;
+  background-color: rgba(12, 25, 44, 0.395);
+  background-blend-mode: darken;
+  transition: background-position 0.3s;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-icon {
+  color: var(--nimbus-orange);
+}
+
+/* ========= COMMON SPLIT SECTION ========= mixed for all orange frame section*/
+.nimbus-split-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+.nimbus-split-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nimbus-img-decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: var(--nimbus-gradient);
+  z-index: 1;
+
+}
+
+.nimbus-split-image .img-box {
+  position: relative;
+  z-index: 2;
+}
+
+.nimbus-split-text,
+.nimbus-split-image {
+  flex: 1 1 48%;
+  padding: 1rem 2rem;
+}
+
+.nimbus-split-image .img-box {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 6;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 4px solid var(--nimbus-bg-light);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nimbus-split-image .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .nimbus-split-section {
+    align-items: center;
+  }
+
+  .nimbus-split-image .img-box {
+    max-height: 420px;
+    aspect-ratio: auto; /* Let height dictate layout on large screens */
+  }
+}
+.nimbus-split-form input,
+.nimbus-split-form select,
+.nimbus-split-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--nimbus-dark);
+  border-radius: 0; /* flat edge */
+  background-color: #f8f8f8;
+  color: var(--nimbus-dark);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-shadow: none;
+  outline: none;
+}
+
+.nimbus-split-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.nimbus-split-form ::placeholder {
+  color: var(--nimbus-grey);
+  font-weight: 400;
+}
+
+/* File input fix */
+.nimbus-split-form input[type="file"] {
+  padding: 0.65rem 0.75rem;
+  background: var(--nimbus-grey);
+  font-size: 1rem;
+  border-radius: 0;
+  color: var(--nimbus-dark);
+}
+
+/* Custom button to match file upload */
+.nimbus-split-form button {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0;
+  background: linear-gradient(to right, var(--nimbus-orange), var(--nimbus-pink));
+  color: var(--nimbus-white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nimbus-split-form button:hover {
+  opacity: 0.9;
+}
+/* about */
+.aboutBg{
+    background: url('AboutBg.png') center center / cover no-repeat;
+
+}
+/* Useour Servuce */
+.ServiceBg {
+      background: url(UseourserviceColbg.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ========= WHO WE ARE SECTION ========= */
+.who-we-are-section {
+  background: url('WhoareweBackground.png') center top / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.who-wrapper {
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+}
+
+.who-box {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.who-bg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 7; /* FLATTER for reduced height */
+}
+
+.who-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--nimbus-bg-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-heading {
+  font-size: 1.75rem;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--nimbus-orange);
+  margin-bottom: 0.5rem;
+}
+
+.who-play-btn {
+  width: 56px;
+  height: 56px;
+  background: var(--nimbus-orange);
+  border: 4px solid var(--nimbus-white);
+  border-radius: 50%;
+  color: var(--nimbus-white);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  transition: background 0.3s;
+}
+
+.who-play-btn:hover {
+  background: var(--nimbus-red);
+}
+
+.who-desc {
+  font-size: 1rem;
+  max-width: 760px;
+  padding: 0 1rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+}
+
+/* MOBILE REFINEMENTS */
+@media (max-width: 768px) {
+  .who-bg-img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .who-heading {
+    font-size: 1rem;
+  }
+
+  .who-desc {
+    font-size: 0.55rem;
+  }
+
+  .who-play-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .who-overlay {
+    padding: 0.75rem;
+  }
+}
+
+
+/* ========= HIRING SECTION ========= */
+.hiring-section {
+  position: relative;
+  background-image: url(Wearehiring.png);
+  background-size: cover;
+  background-position: center top;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.hiring-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.434);
+}
+
+.hiring-content {
+  position: relative;
+  z-index: 1;
+  color: var(--nimbus-white);
+  text-align: center;
+}
+
+.hiring-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+}
+
+.hiring-text {
+  font-size: 1.125rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hiring-btn {
+  padding: 0.75rem 2.5rem;
+  font-size: 1.25rem;
+}
+
+/* ========= ANCHOR ICONS ========= mixed for all orange frame section*/
+.anchor-fixed {
+  position: absolute;
+  width: 110px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.anchor-top-right {
+  top: -60px;
+  right: 128px;
+}
+
+.anchor-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+/* ========= RESPONSIVE =========  Mixed Hiring Section, About Section*/
+@media (max-width: 991px) {
+  .heading-xl { font-size: 2rem; }
+  .heading-lg { font-size: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  .nimbus-split-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .nimbus-split-text,
+  .nimbus-split-image {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+
+  .nimbus-split-image .img-box {
+    aspect-ratio: 4/3;
+  }
+
+  .nimbus-split-form button {
+    width: 100%;
+  }
+
+  .hiring-section {
+    padding: 3rem 1rem;
+  }
+
+  .hiring-title {
+    font-size: 1.75rem;
+  }
+
+  .hiring-text {
+    font-size: 1rem;
+    padding: 0 0.75rem;
+  }
+
+  .hiring-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+  }
+
+  .anchor-fixed {
+    width: 80px;
+  }
+
+  .anchor-top-right {
+    top: -40px;
+    right: 10px;
+  }
+
+  .anchor-bottom-left {
+    bottom: 0;
+    left: 10px;
+  }
+}
+
+/* Multiple Cards Service Section */
+.service-card {
+  position: relative;
+  overflow: visible;
+}
+
+.service-icon-float {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.icon-circle {
+  background-color: var(--nimbus-orange);
+  color: white;
+  font-size: 1.2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.service-bg {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  height: 260px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.service-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.service-wave {
+  margin-bottom: 0.5rem;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.service-arrow i {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Success Through People Section */
+.nimbus-mission-section {
+  position: relative;
+  background: url('DashboardBackground.png') center center / cover no-repeat;
+  background-size: cover;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.nimbus-mission-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.mission-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--nimbus-white);
+  margin-bottom: 0.5rem;
+}
+
+.mission-text {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--nimbus-white);
+}
+
+
+
+
+/* Why Nimbus Section  */
+
+/* Reposition img-decor */
+.left-decor {
+  left: 0;
+  right: auto;
+}
+
+/* Adjust anchor for top-right */
+.anchor-right {
+  bottom: -30px;
+  right: 20px;
+  left: auto;
+}
+
+.nimbus-service-list li i {
+  color: var(--nimbus-orange);
+  margin-right: 0.5rem;
+}
+
+.why-nimbus-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.why-nimbus-list li {
+  margin-bottom: 0.75rem;
+  color: var(--nimbus-dark);
+  display: flex;
+  align-items: start;
+}
+
+.why-nimbus-list i {
+  color: var(--nimbus-orange);
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+}
+/* Lastest Job Section */
+.nimbus-jobs-compact {
+     position: relative;
+    background: url(latestjobs.png) center center / cover no-repeat;
+  background-size: cover;
+  min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+/* Footer CSS */
+.nimbus-footer {
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.footer-wave {
+  background-color: white;
+}
+
+.footer-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-links li i {
+  color: var(--nimbus-orange);
+  margin-right: 0.5rem;
+}
+
+.footer-subscribe input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 0.95rem;
+}
+
+.footer-subscribe button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(to right, #b12400, #f15001);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-subscribe button i {
+  margin-right: 0.4rem;
+}
+
+.footer-bottom-bar {
+  background: linear-gradient(to right, #b12400, #f15001);
+  font-size: 0.9rem;
+}
+
+.footer-links-inline a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.footer-socials a {
+  color: white;
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-wave-underline svg {
+  display: inline-block;
+}
