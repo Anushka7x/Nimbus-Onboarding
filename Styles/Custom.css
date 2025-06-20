@@ -92,7 +92,7 @@ html, body {
   display: block;
   width: 100%;
   height: 12px;
-  background: url('DashboardRope1.png') repeat-x;
+  background: url('/Assets/DashboardRope1.png') repeat-x;
   background-size: contain;
 }
 /* ========= BUTTON ========= */
@@ -127,7 +127,7 @@ html, body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url('DashboardBackground.png') center center/cover no-repeat;
+  background: url('/Assets/DashboardBackground.png') center center/cover no-repeat;
   background-color: rgba(12, 25, 44, 0.395);
   background-blend-mode: darken;
   transition: background-position 0.3s;
@@ -261,12 +261,12 @@ html, body {
 }
 /* about */
 .aboutBg{
-    background: url('AboutBg.png') center center / cover no-repeat;
+    background: url('/Assets/AboutBg.png') center center / cover no-repeat;
 
 }
 /* Useour Servuce */
 .ServiceBg {
-      background: url(UseourserviceColbg.png);
+      background: url(/Assets/UseourserviceColbg.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -274,7 +274,7 @@ html, body {
 
 /* ========= WHO WE ARE SECTION ========= */
 .who-we-are-section {
-  background: url('WhoareweBackground.png') center top / cover no-repeat;
+  background: url('/Assets/WhoareweBackground.png') center top / cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,7 +381,7 @@ html, body {
 /* ========= HIRING SECTION ========= */
 .hiring-section {
   position: relative;
-  background-image: url(Wearehiring.png);
+  background-image: url(/Assets/Wearehiring.png);
   background-size: cover;
   background-position: center top;
   min-height: 450px;
@@ -571,7 +571,7 @@ html, body {
 /* Success Through People Section */
 .nimbus-mission-section {
   position: relative;
-  background: url('DashboardBackground.png') center center / cover no-repeat;
+  background: url('/Assets/DashboardBackground.png') center center / cover no-repeat;
   background-size: cover;
   min-height: 380px;
   display: flex;
@@ -651,7 +651,7 @@ html, body {
 /* Lastest Job Section */
 .nimbus-jobs-compact {
      position: relative;
-    background: url(latestjobs.png) center center / cover no-repeat;
+    background: url(/Assets/latestjobs.png) center center / cover no-repeat;
   background-size: cover;
   min-height: 380px;
     display: flex;
