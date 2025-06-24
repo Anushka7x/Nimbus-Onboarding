@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Offices</title>
+  <title>Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap 5 -->
@@ -25,33 +25,32 @@
 
 <div id="nimbus-navbar-placeholder"></div>
 
-<section class="position-relative overflow-hidden text-center text-white">
-
-  <!-- Background image -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover"
-       style="background:url('/Assets/jobs-header.png') center/cover no-repeat;">
-  </div>
-
-  <!-- Content container -->
-  <div class="container py-5 position-relative" style="z-index:2;">
-    <h2 class="display-5 fw-bold mb-1">BLOG</h2>
-
-    <!-- squiggle -->
-    <div class="d-flex justify-content-center mb-3">
-      <svg height="24" viewBox="0 0 70 14">
-        <path d="M0,8 Q5,0 10,8 T20,8 T30,8 T40,8 T50,8 T60,8 T70,8"
-              stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-      </svg>
+  <section class="hero-section d-flex align-items-center">
+    <div class="hero-bgs">
+      <img src="/Assets/offices-header.png" alt="Hero Background" />
+      
     </div>
-  </div>
-</section>
-  <!-- Anchor icon  + Rope  -->
-<div class="hero-rope-divider">
-    <section class="nimbus-split-section">
+    <div class="container py-5 hero-content text-center">
+      <h1 class="heading-xl"> BLOGS </h1>
+      <div class="text-center wave-underline">
+        <svg viewBox="0 0 140 30" height="25" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,10 Q20,30 30,10 Q40,30 50,10 Q60,30 70,10 Q80,30 90,10"
+                fill="none" stroke="#fff" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+     
+    </div>
+  </section>
+  <div class="hero-rope-divider"></div>
+
+  <section class="nimbus-split-section ">
     <img src="/Assets/DashboardAnchor.png" alt="Anchor" class="anchor-fixed anchor-top-right" />
-</div>
-<br>
-<br>
+  </section>
+
+
+
+
 <!--Cards Section-->
 
 <div class="container py-5">
@@ -186,41 +185,41 @@
   </div>
 </div>
 
-<section class="position-relative overflow-hidden text-center text-white">
-
-  <!-- Background image -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover"
-       style="background:url('/Assets/offices-header.png') center/cover no-repeat; ">
+<!-- NEWSLETTER -->
+<section class="hero-section d-flex align-items-center mb-5 ">
+    <div class="hero-bgs">
+      <img src="/Assets/jobs-header.png" alt="Hero Background" />
+    </div>
+    <div class="container py-5 hero-content text-start">
+      <h1 class="text-center heading-xl">NEWSLETTER</h1>
+      <div class="text-center wave-underline">
+        <svg viewBox="0 0 140 30" height="25" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,10 Q20,30 30,10 Q40,30 50,10 Q60,30 70,10 Q80,30 90,10"
+                fill="none" stroke="#fff" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="row justify-content-center gx-2 gy-2">
+  <!-- Email input -->
+  <div class="col-md-4">
+    <input
+      type="email"
+      class="form-control form-control-lg"
+      placeholder="Enter Your Email"
+      required
+    >
   </div>
 
-  <!-- Content container -->
-  <div class="container py-5 position-relative" style="z-index:2;">
-    <h2 class="display-5 fw-bold mb-1">NEWSLETTER</h2>
-
-    <!-- squiggle -->
-    <div class="d-flex justify-content-center mb-3">
-      <svg height="24" viewBox="0 0 70 14">
-        <path d="M0,8 Q5,0 10,8 T20,8 T30,8 T40,8 T50,8 T60,8 T70,8"
-              stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-      </svg>
-    </div>
-
-     <div class="join-btn-row d-flex gap-3 justify-content-center mt-3">
-  <form class="d-flex flex-nowrap gap-2 align-items-center">
-    <div class="input-group">
-      <span class="input-group-text bg-white border-1">
-        <i class="fas fa-sun text-orange"></i>
-      </span>
-      <input type="email" class="form-control" placeholder="Enter your email" required />
-    </div>
-    <button type="submit" class="nimbus-btn btn-outline d-inline-flex align-items-center">
-      <i class="fas fa-sun me-2"></i> Subscribe
+  <!-- Subscribe button -->
+  <div class="col-md-3 d-grid">
+    <button type="submit" class="btn nimbus-btn btn-lg">
+      <i class="fas fa-sun me-2"></i>
+      Subscribe
     </button>
-  </form>
-</div>
-
   </div>
-</section>
+</div>
+    </div>
+  </section>
 
 <div id="nimbus-Footer-placeholder"></div>
 

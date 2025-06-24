@@ -28,56 +28,46 @@
 
 <body>
 
-    <div id="nimbus-navbar-placeholder"></div>
-<!-- Contact-Us Banner
-     - Needs Bootstrap 5 CSS & Icons already linked in <head> -->
-
-<section class="position-relative overflow-hidden text-center text-white">
-
-  <!-- Background image -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover"
-       style="background:url('/Assets/DashboardBackground.png') center/cover no-repeat;
-              filter:brightness(.35);">
-          
-  </div>
-
-  <!-- Content container -->
-  <div class="container py-5 position-relative" style="z-index:2;">
-   
-      <h2 class="heading-lg">JOBS</h2>
-      <div class="wave-underline">
-
-    <!-- squiggle -->
-    <div class="d-flex justify-content-center mb-3">
-      <svg height="24" viewBox="0 0 70 14">
-        <path d="M0,8 Q5,0 10,8 T20,8 T30,8 T40,8 T50,8 T60,8 T70,8"
-              stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-      </svg>
+<div id="nimbus-navbar-placeholder"></div>
+  <section class="hero-section d-flex align-items-center ">
+    <div class="hero-bgs">
+      <img src="/Assets/services-hero.png" alt="Hero Background" />
     </div>
-
-    <p class="small mb-4">
+    <div class="container py-5 hero-content text-start">
+      <h1 class="text-center heading-xl">CONTACT US</h1>
+      <div class="text-center wave-underline">
+        <svg viewBox="0 0 140 30" height="25" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,10 Q20,30 30,10 Q40,30 50,10 Q60,30 70,10 Q80,30 90,10"
+                fill="none" stroke="#fff" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+       <p class="text-center mb-4 text-white">
       For all marketing enquiries, please mail at
       <a href="mailto:enquiry@nimbusmarinegroup.com" class="text-white text-decoration-underline">
         enquiry@nimbusmarinegroup.com
       </a>
     </p>
+      <div class="row justify-content-center gx-2 gy-2">
+ 
+  <div class="join-btn-row d-flex flex-wrap gap-3 justify-content-center mt-3">
+    <a href="#" class="nimbus-btn d-inline-flex align-items-center">
+      <i class="fas fa-sun me-2"></i> To See Latest Jobs Click Here
+    </a>
+   
+    <a href="#"
+   class="btn-custom gap-2 text-decoration-none d-inline-flex align-items-center">
+  <i class="fa-solid fa-sun"></i>
+   To Apply For Job Click Here
+</a>
 
-    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-      <a href="#latest-jobs" class="btn nimbus-btn px-4">
-        <i class="fas fa-sun me-2"></i> To See Latest Job Click Here
-      </a>
-      <a href="#apply-job" class="btn change-on-hover px-4">
-        <i class="fas fa-sun me-2"></i> To Apply For Job Click Here
-      </a>
     </div>
-  </div>
-</section>
+  </section>
 
- <!-- Anchor icon  + Rope  -->
-<div class="hero-rope-divider">
-    <section class="nimbus-split-section">
+  <div class="hero-rope-divider"></div>
+  <section class="nimbus-split-section ">
     <img src="/Assets/DashboardAnchor.png" alt="Anchor" class="anchor-fixed anchor-top-right" />
-</div>
+ </section>
 
 
 <!--Get In Touch Section-->
@@ -132,199 +122,217 @@
 
   <!-- ALL CARDS SECTION -->
 <section class="container py-4">
-  <div class="row gy-4">
+  <div class="row">
 
-    <!-- Singapore -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="/Assets/Card 1.png" alt="Singapore">
-        <div class="overlay">
-          <div>
-            <h5>Singapore</h5>
-            <p>Nimbus Marine Services Pte Ltd<br>(EA Lic No # 16C7966)<br>
-               77 High Street, High Street Plaza # 07-10,<br>Singapore 179433<br>
-               Tel : +65 66357605   Fax : +65 65213001<br>
-               Mob : +65 91220817<br>
-               Email : Singapore@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 1: Singapore -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-singapore.png" alt="Singapore" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Singapore</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Marine Services Pte ltd<br>
+            (EA Lic No #16C7866)<br>
+            79 High Street, High Street Plaza #07-10,<br>
+            Singapore 179435<br>
+            Tel: +65 63367605 &nbsp; Fax: +65 6332001<br>
+            Mob: +65 91220817<br>
+            Email: Singapore@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Singapore@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- USA -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?houston,usa" alt="USA">
-        <div class="overlay">
-          <div>
-            <h5>USA</h5>
-            <p>Nimbus Marine Services LLC<br>(Regd No. 801993832)<br>
-               2500 Wilcrest Drive Suite 300, Houston TX 77042<br>
-               Tel : +1 832 690 5847   Fax : +1 832 690 5847<br>
-               Email : Houston@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 2: USA -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-usa.png" alt="USA" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">USA</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Marine Services LLC<br>
+            (Regd No. 801983832)<br>
+            2500 Wilcrest Drive Suite 300<br>
+            Houston, TX 77042<br>
+            Tel: +1 832 690 5847 &nbsp; Fax: +1 832 690 5847<br>
+            Email: Houston@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Houston@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Qatar -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?doha" alt="Qatar">
-        <div class="overlay">
-          <div>
-            <h5>Qatar</h5>
-            <p>NIMBUS Trading And Cleaning LLC<br>(License / Reg No. 168131)<br>
-               Building 311, C-Ring Road, Doha, Qatar<br>
-               Tel : +974 3156 4749<br>
-               Email : Qatar@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 3: Qatar -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-qatar.png" alt="Qatar" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Qatar</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Trading And Cleaning LLC<br>
+            (License / Registration No. 16831)<br>
+            Building 31, C-Ring Road<br>
+            Doha, Qatar<br>
+            Tel: +974 3156 4479<br>
+            Email: Qatar@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Qatar@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- India -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?taj-mahal,india" alt="India">
-        <div class="overlay">
-          <div>
-            <h5>India</h5>
-            <p>NIMBUS Trading And Cleaning LLC<br>(License / Reg No. 168131)<br>
-               Level 4, A-Wing, Dynasty Business Park, Andheri Kurla Road,<br>
-               Andheri East, Mumbai 400059, India<br>
-               Tel : +9122 67869177<br>
-               Email : Mumbai@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 4: India -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-india.png" alt="India" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">India</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            NIMBUS Trading And Cleaning LLC<br>
+            (License / Registration No. 16831)<br>
+            Level 4, A-Wing,Dynasty Business Park, Andheri Kurla Road, Andheri East, Mumbai,<br>
+            Maharashtra-400059,India<br>
+            Tel : +9122 67869177<br>
+            Email : Mumbai@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Mumbai@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Taiwan -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?taipei" alt="Taiwan">
-        <div class="overlay">
-          <div>
-            <h5>Taiwan</h5>
-            <p>Nimbus Marine Services Pte., Ltd. Taiwan<br>(License / Reg No. 168131)<br>
-               No. 563, Sec. 4, Zhongxiao E. Rd., Xinyi Dist., Taipei <br>
-               Tel : +65 80606947<br>
-               Email : Taipei@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 5: Taiwan -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-taiwan.png" alt="Taiwan" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Taiwan</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Marine Services Pte. Ltd. Taiwan<br>
+            No. 563, Sec. 4, Zhongxiao E. Rd., Xinyi Dist.,<br>
+            Taipei, Taiwan<br>
+            Tel: +65 806060947<br>
+            Email: Taipei@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Taipei@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Malaysia -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?kuala-lumpur" alt="Malaysia">
-        <div class="overlay">
-          <div>
-            <h5>Malaysia</h5>
-            <p>NIMBUS MARINE SDN BHD<br>(License / Reg No. 168131)<br>
-               Level 3A, Sunway Visio Tower, Lingkaran SV,<br>
-               Sunway Velocity, 55100 Kuala Lumpur MY<br>
-               Tel : +60 3 9771 2431<br>
-               Email : Kl@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 6: Malaysia -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-malaysia.png" alt="Malaysia" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Malaysia</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            NIMBUS MARINE SDN BHD<br>
+            (License / Registration No. 16831)<br>
+            Level 3A, Sunway Visio Tower, Lingkaran SV, Sunway Velocity, 55100 Kuala Lumpur, MALAYSIA<br>
+            Tel : +60 3 9771 2431<br>
+            Email: Kl@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Kl@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Indonesia -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?jakarta" alt="Indonesia">
-        <div class="overlay">
-          <div>
-            <h5>Indonesia</h5>
-            <p>PT NIMBUS MARINE (Indonesia)<br>(License / Reg No. 168131)<br>
-               Level 3A, Sunway Visio Tower, Lingkaran SV,<br>
-               Sunway Velocity, 55100 Kuala Lumpur MY<br>
-               Tel : +60 3 9771 2431<br>
-               Email : Kl@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 7: Indonesia -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-indonesia.png" alt="Indonesia" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Indonesia</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            PT NIMBUS MARINE (Indonesia)<br>
+            (License / Registration No. 16831)<br>
+            Level 3A, Sunway Visio Tower, Lingkaran SV, Sunway Velocity, 55100 Kuala Lumpur, MALAYSIA<br>
+            Tel : +60 3 9771 2431<br>
+            Email: Kl@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Kl@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Saudi Arabia -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?riyadh" alt="Saudi Arabia">
-        <div class="overlay">
-          <div>
-            <h5>Saudi Arabia</h5>
-            <p>Nimbus Trading And Cleaning LLC (Saudi Arabia)<br>
-               P.O.Box 4359 – 12875, Prince Muhammad Bin Abul Rehman Rd.,<br>
-               Al-Khaldiyah Dist. 7281<br>
-               Tel : +966 57 006 7144<br>
-               Email : Ksa@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 8: Saudi Arabia -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-saudi.png" alt="Saudi Arabia" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Saudi Arabia</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Trading And Cleaning LLC (Saudi Arabia)<br>
+            P.O.Box 4359 - 12875, Prince Muhammad Bin Abdul Rehman Road, Al-Khalidiyah Dist. 7281<br>
+            Tel : +966 57 006 7144<br>
+            Email: Ksa@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Ksa@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
 
-    <!-- Philippine -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="office-card">
-        <img src="https://source.unsplash.com/800x450/?manila" alt="Philippine">
-        <div class="overlay">
-          <div>
-            <h5>Philippine</h5>
-            <p>Nimbus Trading And Cleaning LLC (Philippine)<br>(License / Reg No. 168131)<br>
-               9th Flr, Jemarsons Place Condo, 1626 Pilar Hidalgo Lim St.<br>
-               Malate, Manila 1004 PH<br>
-               Tel : (+63) 922-555-5326<br>
-               Email : Manila@Nimbusmarinegroup.Com
-            </p>
+    <!-- Card 9: Philippine -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-philippine.png" alt="Philippine" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Philippine</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Nimbus Trading And Cleaning LLC (Philippine)<br>
+            (License / Registration No. 16831)<br>
+            6th Fl., Jsmarasros Place Condo, 1826 Pilar Hidalgo Lim St., Malate, Manila 1004, Philippines<br>
+            Tel: (+63)928-555-5326<br>
+            Email: Manila@Nimbusmarinegroup.Com
           </div>
-          <a href="mailto:Manila@Nimbusmarinegroup.Com"
-             class="nimbus-btn btn-contact d-inline-flex align-items-center">
-            <i class="bi bi-asterisk me-1"></i>Contact Us
-          </a>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10: Sri Lanka -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-srilanka.png" alt="Sri Lanka" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Sri Lanka</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            ASIAN MARINE CONCERN (PVT.) LTD.<br>
+            (License / Registration No. 16831)<br>
+            No.46 2nd Floor, 6th Lane, Kotahena, Colombo 13 Sri Lanka<br>
+            Tel: +94 77 778 3897<br>
+            Email : Colombo@Nimbusmarinegroup.Com
+          </div>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 11: Myanmar -->
+    <div class="col-lg-4 col-md-6 hover-move-up move-down ">
+      <div class="card-contact">
+        <img src="/assets/contact-myanmar.png" alt="Myanmar" class="card-img-bg">
+        <div class="card-img-overlay-dark"></div>
+        <div class="card-body text-white">
+          <h5 class="fw-bold mb-2">Myanmar</h5>
+          <div class="mb-2" style="font-size:0.95rem;">
+            Myanmar Maritime Shipping Agency Co.Ltd.<br>
+            (License / Registration No. 16831)<br>
+            No.87 1st Floor, Yamonna 3rd Street, Dawbon Yangon, Myanmar. (Rgs-SRS-PNM-26)<br>
+            Tel: +95-1-9553485 ; +95-9-511812.<br>
+            Email: Yangon@Nimbusmarinegroup.Com
+          </div>
+          <a href="#" class="btn btn-sm mt-1">Contact Us</a>
         </div>
       </div>
     </div>
